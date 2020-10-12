@@ -1,8 +1,20 @@
 <html>
     <head>
         <title>Chu vi và Diện tích hình tròn</title>
+        <script src="tinh.js"></script>
     </head>
     <body>
-        <script src="tinh.js"></script>
+        <table>
+            <tr>
+                <th>Mời nhập bán kính hình tròn :</th>
+                <td><input type="Number" id="R"></td>
+                <td><input onclick=tinh() type="button" value="Nhập"</td>
+            </tr>
+            <tr>
+                <td id="hienthiD" colspan="3"></td>
+            </tr>
+            <tr><td id="hienthiC" colspan="3"></td></tr>
+            <tr><td id="hienthiS" colspan="3"></td></tr>
+        </table>
     </body>
 </html>

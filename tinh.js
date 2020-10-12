@@ -1,7 +1,13 @@
-let R = Number(prompt("Nhập bán kính"))
+function tinh() {
+let R = Number(document.getElementById("R").value)
 let D = R * 2
 let C = 2 * R * 3.14
-let S = R ^ 2 * 3.14
-document.write("Đườngkính hình tròn là: " + D)
-document.write("Chu vi hình tròn là: " + C)
-document.write("Diện tích hình tròn là: " + S)
+let S = R * R * 3.14
+let hienthiD = "Đường kính hình tròn là: " + D
+let hienthiC = "Chu vi hình tròn là: " + C
+let hienthiS = "Diện tích hình tròn là: " + S
+document.getElementById("hienthiD").innerText = hienthiD
+document.getElementById("hienthiC").innerText = hienthiC
+document.getElementById("hienthiS").innerText = hienthiS
+document.getElementById("R").focus()
+}
